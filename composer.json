@@ -1,0 +1,44 @@
+{
+    "name": "oyta/plugin",
+    "description": "Laravel9插件系统。",
+    "keywords": [
+        "Laravel",
+        "PHP",
+        "Plugin System",
+        "Plugin Market",
+        "Hook",
+        "插件",
+        "插件市场",
+        "钩子"
+    ],
+    "homepage": "https://github.com/tianshuapp/gallery_plugin",
+    "authors": [
+        {
+            "name": "Oyta",
+            "email": "oyta@daucn.com"
+        }
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oyta\\Plugin\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oyta\\Plugin\\PluginServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "laravel/framework": "^9.19"
+    }
+}
